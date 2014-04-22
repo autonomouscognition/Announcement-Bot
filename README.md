@@ -1,7 +1,7 @@
 Announcement-Bot
 ================
 
-Parses announcements and emails user if a string from a "properties" file is found.
+A simple Pyhton script. It parses the Holy Ghost Prep announcements and emails the user if a string from a "properties" file is found.
 
 How to use
 ==========
