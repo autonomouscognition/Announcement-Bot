@@ -35,7 +35,7 @@ def checkIfInText(values, htmlSource):
 def sendEmail(announce):
     #sends email
     fromaddr = 'announcementbot@autonomouscognition.com' #email to send FROM
-    toaddr = 'ericghildyal@gmail.com' #email to send TO
+    toaddr = '[PUT AN EMAIL HERE]' #email to send TO
     msg = MIMEText(announce)
     msg['Subject'] = 'Announcements'
     msg['From'] = fromaddr
