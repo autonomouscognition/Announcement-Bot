@@ -12,3 +12,6 @@ Put the python script and the properties file in a location that will run the sc
 - The properties file should have one entry per line
 	- There should be no other punctuation/text
 - Do not forget to replace the receiving email. (Line 38)
+- The SMTP account areas (server, port, username, password) have been left blank, you need to update them in order to receive emails.
+	- I used SMTPcorp.com as a free SMTP service (email server)
+

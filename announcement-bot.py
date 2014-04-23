@@ -40,11 +40,11 @@ def sendEmail(announce):
     msg['Subject'] = 'Announcements'
     msg['From'] = fromaddr
     msg['To'] = toaddr
-    server = smtplib.SMTP('smtpcorp.com', 2525)
+    server = smtplib.SMTP('[WEB ADDRESS]', [PORT]) #Replace "Web address" and "port" with corresponding values
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login("hgpemail", "hgp") #login info from smtpcorp.com
+    server.login("[USERNAME]", "[PASSWORD]") #login info from SMTP provider
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
 
