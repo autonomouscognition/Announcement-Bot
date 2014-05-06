@@ -1,4 +1,3 @@
-eric ghildyal
-french club
-tuned in
-tuned-in
+#Place Items you would like to parse for here
+#One item per line
+#remove these comments before first use
