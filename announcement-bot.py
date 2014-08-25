@@ -1,6 +1,8 @@
 import urllib
 import re
 import smtplib
+import datetime
+now = datetime.datetime.now()
 from email.mime.text import MIMEText
 
 # Parses Ehgp for any words found in the proporties file.
@@ -37,7 +39,10 @@ def sendEmail(announce):
     fromaddr = 'announcementbot@autonomouscognition.com' #email to send FROM
     toaddr = '[PUT AN EMAIL HERE]' #email to send TO
     msg = MIMEText(announce)
-    msg['Subject'] = 'Announcements'
+    month = now.month
+    day = now.day
+    year = now.year
+    msg['Subject'] = "Announcements for " + str(month) + "/" + str(day) + "/" + str(year)
     msg['From'] = fromaddr
     msg['To'] = toaddr
     server = smtplib.SMTP('[WEB ADDRESS]', [PORT]) #Replace "Web address" and "port" with corresponding values
